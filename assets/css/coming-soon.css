@@ -1,0 +1,124 @@
+.section-overlay {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    min-height: 700px;
+    width: 100%;
+    z-index: -100;
+}
+
+.page-amplitude-wrapper + .section-overlay,
+#page-particle + .section-overlay {
+    z-index: 0;
+}
+
+.section-overlay.youtube {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    transform: translate(-50%, -50%);
+}
+
+.section-overlay.media {
+    z-index: -250;
+}
+
+.section-overlay img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.overlay-opacity {
+    filter: alpha(opacity=50);
+    opacity: 0.3;
+}
+
+.overlay-opacity-2 {
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+}
+
+.overlay-opacity-3 {
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+}
+
+.page-info {
+    min-height: 700px;
+    height: 100%;
+    padding: 50px 0;
+}
+
+
+.vert-middle {
+    min-height: 700px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.vert-middle > div {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.p-t-b-5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.p-t-b-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.count-down h1 {
+    line-height: 1;
+}
+
+.count-down p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+.count-down > div > div {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.count-down > .cd-row {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .count-down > div > div {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .count-down h1 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+
+    .page-info {
+        padding: 50px 0;
+        position: fixed;
+    }
+
+    .count-down {
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+}
